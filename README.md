@@ -9,7 +9,7 @@ Projeto PHP + MySQL criado a partir da estrutura e padrões observados nos proje
 * Atualizar (Update): Editar dados de filmes existentes (ex: alterar preço, corrigir título ou mudar o status).
 * Deletar (Delete): Remover filmes do sistema.
 
-# Aluguel de Filmes
+# Aluguel de Filmesgi
 * Consultar Disponibilidade: Filtrar ou visualizar apenas os filmes disponíveis para locação.
 * Realizar Aluguel: Alterar o status do filme para "alugado".
 * Devolução: Registrar a devolução do filme, tornando-o disponível novamente.
