@@ -1,8 +1,17 @@
-```php
 <?php
 
 $filme = $_GET["filme"];
-
+if (isset($_POST["confirmar"])) {
+    if (isset($_SESSION["filmes"])) {
+        foreach ($_SESSION["filmes"] as &$item) {
+            if ($item["nome"] == $filme) {
+                $item["disponibilidade"] = "Alugado";
+            }
+        }
+        unset($item);
+    }
+    $aluguelRealizado = true;
+}
 ?>
 
 <!DOCTYPE html>
@@ -19,7 +28,6 @@ $filme = $_GET["filme"];
 
 <header>
     <div class="logo">MIMOV</div>
-
     <nav>
         <a href="painel.php">Início</a>
         <a href="catalogo.php">Catálogo</a>
@@ -30,11 +38,8 @@ $filme = $_GET["filme"];
 <main>
     <div class="formulario">
         <h1>Alugar Filme</h1>
-
         <h2><?php echo $filme; ?></h2>
-
         <p>Valor da locação:</p>
-
         <p class="preco">
             R$ 10,00
         </p>
@@ -46,15 +51,13 @@ $filme = $_GET["filme"];
         </form>
 
         <?php
-
-        if (isset($_POST["confirmar"])) {
+        if (isset($aluguelRealizado)) {
             echo "<p class='mensagem'>Aluguel realizado com sucesso!</p>";
         }
 
         ?>
 
         <br>
-
         <a href="catalogo.php">
             Voltar para o catálogo
         </a>
@@ -63,4 +66,4 @@ $filme = $_GET["filme"];
 
 </body>
 </html>
-```
+``
