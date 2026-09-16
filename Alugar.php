@@ -1,5 +1,6 @@
 <?php
-
+<?php
+session_start();
 $filme = $_GET["filme"];
 if (isset($_POST["confirmar"])) {
     if (isset($_SESSION["filmes"])) {
