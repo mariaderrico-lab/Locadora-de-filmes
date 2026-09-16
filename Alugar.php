@@ -89,3 +89,8 @@ $filme = $_GET["filme"];
 </body>
 
 </html>
+</main>
+
+</body>
+
+</html>
