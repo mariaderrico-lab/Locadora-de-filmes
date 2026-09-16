@@ -101,3 +101,8 @@ if (isset($_POST["adicionar"])) {
 </body>
 
 </html>
+</main>
+
+</body>
+
+</html>
