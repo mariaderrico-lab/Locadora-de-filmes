@@ -50,7 +50,6 @@ session_start();
 
     <section class="catalogo">
 
-
         <div class="filme">
 
             <img src="img/images.jpg" alt="Mulherzinhas">
@@ -79,7 +78,6 @@ session_start();
             </div>
 
         </div>
-
 
         <div class="filme">
 
@@ -111,7 +109,6 @@ session_start();
 
         </div>
 
-
         <div class="filme">
 
             <img src="img/images (2).jpg"
@@ -132,7 +129,6 @@ session_start();
             </div>
 
         </div>
-
 
         <div class="filme">
 
@@ -167,7 +163,6 @@ session_start();
 
         </div>
 
-
         <div class="filme">
 
             <img src="img/s-l1200.jpg"
@@ -191,7 +186,6 @@ session_start();
             </div>
 
         </div>
-
 
         <?php
 
@@ -218,13 +212,17 @@ session_start();
                 </p>
 
                 <span class="<?php
+
                     if ($filme["disponibilidade"] == "Disponível") {
                         echo "disponivel";
                     } else {
                         echo "indisponivel";
                     }
+
                 ?>">
+
                     <?php echo $filme["disponibilidade"]; ?>
+
                 </span>
 
                 <?php
