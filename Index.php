@@ -6,16 +6,11 @@
     <title>Login - Locadora de Filmes</title>
     <link rel="stylesheet" href="css/login.css">
 </head>
-
 <body>
-
-    <div class="login-container">
-
+    <div class="login-container"
         <h1>Mimov - Locadora de Filmes</h1>
         <h2>Login</h2>
-
         <form action="login.php" method="POST">
-
             <label for="email">E-mail:</label>
             <input 
                 type="email" 
@@ -24,7 +19,6 @@
                 placeholder="Digite seu e-mail"
                 required
             >
-
             <label for="senha">Senha:</label>
             <input 
                 type="password" 
@@ -33,12 +27,8 @@
                 placeholder="Digite sua senha"
                 required
             >
-
             <button type="submit">Entrar</button>
-
         </form>
-
     </div>
-
 </body>
 </html>
