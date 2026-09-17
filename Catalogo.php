@@ -88,11 +88,11 @@ session_start();
             </div>
         </div>
 
-        <?php
-        if (isset($_SESSION["filmes"])) {
-            foreach ($_SESSION["filmes"] as $filme) {
-        ?>
+<?php
+if (isset($_SESSION["filmes"])) {
+    foreach ($_SESSION["filmes"] as $indice => $filme) {
 
+?>
         <div class="filme">
             <img src="<?php echo $filme["foto"]; ?>" alt="<?php echo $filme["nome"]; ?>">
             <div class="informacoes">
