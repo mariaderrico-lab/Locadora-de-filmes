@@ -22,18 +22,25 @@ O projeto da locadora de filmes permite que o usuário faça seu login e tenha a
 * Interface: HTML/CSS 
 
 # Requisitos Funcionais (RF)
-RF01: Permitir o cadastro de usuários utilizando e-mail/usuário e senha.
-RF02: Permitir o cadastro de filmes no catálogo da locadora.
-RF03: Exibir a lista de filmes cadastrados no catálogo.
-RF04: Permitir adicionar novos filmes em catálogo e 
-RF05: Permitir que o usuário solicite a locação de um ou mais filmes disponíveis.
-RF06: Registrar a devolução de um filme locado e calcular eventuais multas por atraso.
-RF07: Permitir o cancelamento de uma solicitação de locação antes da confirmação.
-RF08: Emitir relatórios de filmes mais alugados e histórico de locações por usuário.
-RF09: Gerenciar o estoque físico/digital de cópias de cada filme disponível.
+* Cadastrar filmes
+* Atualizar filme
+* Excluir filme
+* Consultar informações de um filme
+* Registrar locações
+* Registrar devoluções
 
 # Requisitos Não Funcionais (RNF)
-RNF01: Back-End processado através do lado do servidor (PHP).
+* Sistema desenvolvido em PHP 8.3+
+* Banco MySQL ou PostgreSQL
+* API utilizando padrão REST
+* Comunicação utilizando JSON
+* Utilização dos métodos HTTP
+* Interface responsiva
+* Código organizado
+* Versionamento com Git/GitHub
+* Planejamento pelo Jira
+* Validação dos dados enviados
+* Tratamento de erros
 
 # Como Executar o Projeto
 Baixar o GitHub
@@ -44,7 +51,6 @@ Iniciar Apache + MySQL
 Criar/importar banco
 Configurar conexão PHP
 http://localhost/nome-do-projeto/
-
 
 # Banco de dados Mysql
 CREATE TABLE ‘login’ . ‘new_table’ (
