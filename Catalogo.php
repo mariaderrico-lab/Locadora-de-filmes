@@ -24,16 +24,18 @@ session_start();
         <p>Confira os filmes disponíveis para locação</p>
         <a href="add.php" class="botao-adicionar">+ Adicionar Filme</a>
     </div>
-    
     <section class="catalogo">
+
         <div class="filme">
             <img src="img/mulherzinhas.jpg" alt="Mulherzinhas">
+
             <div class="informacoes">
                 <h2>Mulherzinhas</h2>
                 <p><strong>Ano:</strong> 2019</p>
                 <p><strong>Gênero:</strong> Drama</p>
                 <span class="disponivel">Disponível</span>
                 <p class="preco">R$ 10,00</p>
+
                 <a href="alugar.php?filme=Mulherzinhas" class="alugar">
                     Alugar
                 </a>
@@ -42,12 +44,14 @@ session_start();
 
         <div class="filme">
             <img src="img/diariodeumapaixao.jpg" alt="O Diário de uma Paixão">
+
             <div class="informacoes">
                 <h2>O Diário de uma Paixão</h2>
                 <p><strong>Ano:</strong> 2004</p>
                 <p><strong>Gênero:</strong> Romance</p>
                 <span class="disponivel">Disponível</span>
                 <p class="preco">R$ 10,00</p>
+
                 <a href="alugar.php?filme=O Diário de uma Paixão" class="alugar">
                     Alugar
                 </a>
@@ -56,6 +60,7 @@ session_start();
 
         <div class="filme">
             <img src="img/younghearts.png" alt="Young Hearts">
+
             <div class="informacoes">
                 <h2>Young Hearts</h2>
                 <p><strong>Ano:</strong> 2024</p>
@@ -66,12 +71,14 @@ session_start();
 
         <div class="filme">
             <img src="img/10coisasqodeiosobrevc" alt="10 Coisas que Eu Odeio Sobre Você">
+
             <div class="informacoes">
                 <h2>10 Coisas que Eu Odeio Sobre Você</h2>
                 <p><strong>Ano:</strong> 1999</p>
                 <p><strong>Gênero:</strong> Romance / Comédia</p>
                 <span class="disponivel">Disponível</span>
                 <p class="preco">R$ 10,00</p>
+
                 <a href="alugar.php?filme=10 Coisas que Eu Odeio Sobre Você" class="alugar">
                     Alugar
                 </a>
@@ -80,6 +87,7 @@ session_start();
 
         <div class="filme">
             <img src="img/ondas.png" alt="Waves">
+
             <div class="informacoes">
                 <h2>Waves</h2>
                 <p><strong>Ano:</strong> 2019</p>
@@ -87,12 +95,11 @@ session_start();
                 <span class="indisponivel">Indisponível</span>
             </div>
         </div>
-
-<?php
-if (isset($_SESSION["filmes"])) {
-    foreach ($_SESSION["filmes"] as $indice => $filme) {
-
-?>
+        
+        <?php
+        if (isset($_SESSION["filmes"])) {
+            foreach ($_SESSION["filmes"] as $indice => $filme) {
+        ?>
         <div class="filme">
             <img src="<?php echo $filme["foto"]; ?>" alt="<?php echo $filme["nome"]; ?>">
             <div class="informacoes">
@@ -122,8 +129,12 @@ if (isset($_SESSION["filmes"])) {
                 <?php
                 }
                 ?>
-            </div
+                <a href="excluir.php?indice=<?php echo $indice; ?>" class="alugar">
+                    Excluir
+                </a>
+            </div>
         </div>
+
         <?php
             }
         }
