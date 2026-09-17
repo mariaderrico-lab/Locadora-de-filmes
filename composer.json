@@ -1,0 +1,22 @@
+{
+    "name": "aluno.senai/locadora-de-filmes-1",
+    "type": "project",
+    "authors": [
+        {
+            "name": "mariaderrico",
+            "email": "maria.d'errico@ba.estudante.senai.br"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "mariaderrico/locadora-de-filmes-1": "Locadora-de-filmes-1/",
+            "Controller\\": "Controller/",
+            "Model\\": "Model/"
+        },
+        "files": [
+            "Config/configuration.php"
+        ]
+    },
+    
+    "require": {}
+}
