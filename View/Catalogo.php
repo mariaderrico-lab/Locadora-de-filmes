@@ -71,7 +71,7 @@ if (!isset($_SESSION["usuario_logado"])) {
 
 
         <div class="filme">
-            <img src="img/younghearts.png" alt="Young Hearts">
+            <img src="img/younghearts.jpg" alt="Young Hearts">
 
 
             <div class="informacoes">
@@ -84,7 +84,7 @@ if (!isset($_SESSION["usuario_logado"])) {
 
 
         <div class="filme">
-            <img src="img/10coisasqodeiosobrevc" alt="10 Coisas que Eu Odeio Sobre Você">
+            <img src="img/10coisasqodeiosobrevc.jgp" alt="10 Coisas que Eu Odeio Sobre Você">
 
 
             <div class="informacoes">
@@ -103,7 +103,7 @@ if (!isset($_SESSION["usuario_logado"])) {
 
 
         <div class="filme">
-            <img src="img/ondas.png" alt="Waves">
+            <img src="img/ondas.jpg" alt="Waves">
 
 
             <div class="informacoes">
