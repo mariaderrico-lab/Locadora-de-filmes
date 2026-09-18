@@ -1,5 +1,5 @@
 # Projeto Mimov - locadora-de-filmes
-desenvolvida para gerenciar o catálogo e o aluguel de filmes de uma locadora. 
+Desenvolvida para gerenciar o catálogo e o aluguel de filmes de uma locadora. 
 
 # Aluguel de Filmes
 * Consultar Disponibilidade: Filtrar ou visualizar apenas os filmes disponíveis para locação.
